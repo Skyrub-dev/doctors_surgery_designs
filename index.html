@@ -68,7 +68,73 @@
     </div>
   </section>
 
+  <section class="p-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+
+              </div>
+              <h3 class="card-title mb-3">
+                BMI and body weight
+              </h3>
+              <p class="card-text">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bmi">
+                  Calculate
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
   
+                </div>
+                <h3 class="card-title mb-3">
+                  NHS Health A to Z index
+                </h3>
+                <p class="card-text">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#health">
+                    Find out more
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="col-md">
+            <div class="col-md">
+              <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                  <div class="h1 mb-3">
+    
+                  </div>
+                  <h3 class="card-title mb-3">
+                    Depression assessment
+                  </h3>
+                  <p class="card-text">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#depress">
+                      Find out more
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="faq" class="p-5">
+
+</section>
 
 <!-- Modal for booking system -->
 <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -146,6 +212,57 @@
       </div>
       <div class="modal-body">
         fetch data entered, maybe can access using temp?? not sure need to look into this page as a whole more
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="bmi" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bmi">BMI checker</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="tool_bmi" src="https://assets.nhs.uk/tools/bmi/index.html?syn_id=81c84dc0-6b26-11ec-89f7-e334b33bb930" style = "width:100%;" frameborder="0" scrolling="no" seamless></iframe><script src="https://assets.nhs.uk/tools/bmi/js/iframe_helper.js"></script><!--NHS tool-->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="health" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="health">Health A to Z</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div style="position: relative; max-width: 500px; height: 300px"><iframe src="https://api-bridge.azurewebsites.net/conditions/?p=all&aspect=name,overview_short,symptoms_short,symptoms_long,treatments_overview_short,other_treatments_long,self_care_long,prevention_short,causes_short&tab=0&uid=81c84dc0-6b26-11ec-89f7-e334b33bb930" title="NHS website - health a-z" style="position: absolute; height: 100%; width: 100%; border: 2px solid #015eb8;"></iframe></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="depress" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="depress">Think you're suffering from depression?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="tool_self-assessments_42" src="https://assets.nhs.uk/tools/self-assessments/index.html?variant=42&syn_id=81c84dc0-6b26-11ec-89f7-e334b33bb930" style = "width:100%;" frameborder="0" scrolling="no" seamless></iframe><script src="https://assets.nhs.uk/tools/self-assessments/js/iframe_helper.js"></script>
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Submit</button>
