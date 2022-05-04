@@ -1,0 +1,1 @@
+Initial designs for doctors surgery page, incomplete but quickly showcases the design. The complete version with backend functionality can be found here: https://github.com/Skyrub-dev/Doctors_surgery_website
